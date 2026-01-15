@@ -1,0 +1,20 @@
+{
+  "common": {
+    "welcome": "Bienvenue",
+    "dashboard": "Tableau de bord",
+    "jobs": "Offres d'emploi",
+    "applications": "Candidatures",
+    "payroll": "Paie",
+    "settings": "Paramètres",
+    "logout": "Déconnexion"
+  },
+  "recruiter": {
+    "active_jobs": "Offres Actives",
+    "received_apps": "Candidatures Reçues",
+    "interviews": "Entretiens Prévus"
+  },
+  "candidate": {
+    "find_job": "Trouver un job",
+    "my_apps": "Mes Candidatures"
+  }
+}

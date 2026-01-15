@@ -1,0 +1,20 @@
+{
+  "common": {
+    "welcome": "Marahaba",
+    "dashboard": "Meza ya hazi",
+    "jobs": "Zitrendre za hazi",
+    "applications": "Zidandzo za hazi",
+    "payroll": "Malipvi",
+    "settings": "Zitrendre",
+    "logout": "Uruha"
+  },
+  "recruiter": {
+    "active_jobs": "Zitrendre zilipo",
+    "received_apps": "Zidandzo zipvatsa",
+    "interviews": "Mahanyanyi yandzilwa"
+  },
+  "candidate": {
+    "find_job": "Uvandre hazi",
+    "my_apps": "Zidandzo zangu"
+  }
+}
