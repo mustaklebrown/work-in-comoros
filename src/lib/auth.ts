@@ -30,13 +30,12 @@ export const auth = betterAuth({
     },
   },
   trustedOrigins: [
+    'https://work-in-comoros.vercel.app',
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     // Allow local network access for testing
     'http://192.168.1.84:3000',
     // Production domains
-    'https://work-in-comoros.km',
-    'https://work-in-comoros.vercel.app',
     process.env.NEXT_PUBLIC_APP_URL,
   ].filter(Boolean) as string[],
 });
