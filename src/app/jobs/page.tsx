@@ -6,6 +6,14 @@ import { Search } from "lucide-react"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
+
 export default async function JobsPage({
     searchParams,
 }: {
@@ -23,7 +31,7 @@ export default async function JobsPage({
                         { company: { name: { contains: q, mode: 'insensitive' } } }
                     ]
                 } : {},
-                island ? { locationIsland: island as any } : {}
+                island && island !== 'all' ? { locationIsland: island as any } : {}
             ]
         },
         include: {
@@ -50,8 +58,8 @@ export default async function JobsPage({
                         </p>
                     </div>
 
-                    {/* Search Bar - Could be a client component for interactivity, keeping simple for now */}
-                    <form className="flex gap-2">
+                    {/* Search Bar */}
+                    <form className="flex flex-col sm:flex-row gap-2">
                         <div className="relative flex-1">
                             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
                             <Input
@@ -60,6 +68,19 @@ export default async function JobsPage({
                                 placeholder="Rechercher par poste, entreprise ou mot-clé..."
                                 className="pl-9 bg-white dark:bg-zinc-900"
                             />
+                        </div>
+                        <div className="w-full sm:w-[200px]">
+                            <Select name="island" defaultValue={island || "all"}>
+                                <SelectTrigger className="bg-white dark:bg-zinc-900">
+                                    <SelectValue placeholder="Toutes les îles" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectItem value="all">Toutes les îles</SelectItem>
+                                    <SelectItem value="GRANDE_COMORE">Grande Comore</SelectItem>
+                                    <SelectItem value="ANJOUAN">Anjouan</SelectItem>
+                                    <SelectItem value="MOHELI">Mohéli</SelectItem>
+                                </SelectContent>
+                            </Select>
                         </div>
                         <Button type="submit" className="bg-[#0052cc] hover:bg-blue-700 text-white">
                             Rechercher
