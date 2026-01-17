@@ -7,7 +7,7 @@ import { Navbar } from "@/components/navbar"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950">
+    <div className="flex min-h-screen flex-col bg-linear-to-b from-slate-50 via-white to-slate-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950">
       {/* Header */}
       <Navbar />
 
@@ -18,12 +18,12 @@ export default function Home() {
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-0 -left-20 w-96 h-96 bg-[#0052cc]/10 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-0 -right-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-linear-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl" />
           </div>
 
           <div className="max-w-5xl space-y-8 relative z-10">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 text-[#0052cc] dark:text-blue-400 text-sm font-semibold border border-blue-100 dark:border-blue-900/50 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 text-[#0052cc] dark:text-blue-400 text-sm font-semibold border border-blue-100 dark:border-blue-900/50 shadow-sm">
               <Zap className="h-4 w-4" />
               <span>Plateforme RH de confiance aux Comores</span>
               <Badge variant="secondary" className="bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-[10px] px-2">Nouveau</Badge>
@@ -32,7 +32,7 @@ export default function Home() {
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
               Trouvez votre{" "}
-              <span className="bg-gradient-to-r from-[#0052cc] via-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#0052cc] via-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 talent idéal
               </span>
               <br />
@@ -48,7 +48,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white gap-2 h-16 px-12 text-lg shadow-2xl shadow-blue-500/30 ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-all"
+                className="bg-linear-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white gap-2 h-16 px-12 text-lg shadow-2xl shadow-blue-500/30 ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-all"
                 asChild
               >
                 <Link href="/register">
@@ -90,19 +90,19 @@ export default function Home() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center space-y-2">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0052cc] to-blue-600 bg-clip-text text-transparent">500+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#0052cc] to-blue-600 bg-clip-text text-transparent">500+</div>
                 <div className="text-sm text-zinc-600 dark:text-zinc-400">Offres actives</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">2,000+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-linear-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">2,000+</div>
                 <div className="text-sm text-zinc-600 dark:text-zinc-400">Candidats inscrits</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">150+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">150+</div>
                 <div className="text-sm text-zinc-600 dark:text-zinc-400">Entreprises</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">95%</div>
+                <div className="text-4xl md:text-5xl font-bold bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">95%</div>
                 <div className="text-sm text-zinc-600 dark:text-zinc-400">Taux de satisfaction</div>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function Home() {
               {/* Feature Card 1 */}
               <Card className="group hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border-2 hover:border-blue-200 dark:hover:border-blue-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
                     <Globe className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Couverture Nationale</h3>
@@ -142,7 +142,7 @@ export default function Home() {
               {/* Feature Card 2 */}
               <Card className="group hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 border-2 hover:border-emerald-200 dark:hover:border-emerald-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
                     <ShieldCheck className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">100% Conforme</h3>
@@ -158,7 +158,7 @@ export default function Home() {
               {/* Feature Card 3 */}
               <Card className="group hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 border-2 hover:border-amber-200 dark:hover:border-amber-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
                     <Zap className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Ultra-Rapide</h3>
@@ -174,7 +174,7 @@ export default function Home() {
               {/* Feature Card 4 */}
               <Card className="group hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 border-2 hover:border-purple-200 dark:hover:border-purple-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
                     <Users className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Gestion Simplifiée</h3>
@@ -190,7 +190,7 @@ export default function Home() {
               {/* Feature Card 5 */}
               <Card className="group hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 border-2 hover:border-pink-200 dark:hover:border-pink-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-pink-500 to-pink-600 flex items-center justify-center shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
                     <TrendingUp className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Analytics Avancés</h3>
@@ -206,7 +206,7 @@ export default function Home() {
               {/* Feature Card 6 */}
               <Card className="group hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 border-2 hover:border-indigo-200 dark:hover:border-indigo-900">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
                     <Award className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">CV Professionnels</h3>
@@ -223,7 +223,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="px-4 md:px-6 py-24 bg-gradient-to-b from-white to-slate-50 dark:from-zinc-900/50 dark:to-zinc-950">
+        <section className="px-4 md:px-6 py-24 bg-linear-to-b from-white to-slate-50 dark:from-zinc-900/50 dark:to-zinc-950">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16 space-y-4">
               <Badge variant="outline" className="text-[#0052cc] border-blue-200 dark:border-blue-900">Témoignages</Badge>
@@ -247,7 +247,7 @@ export default function Home() {
                     "Work-in-Comoros a révolutionné notre processus de recrutement. Nous avons trouvé des talents exceptionnels en quelques jours."
                   </p>
                   <div className="flex items-center gap-3 pt-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 rounded-full bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold">
                       AM
                     </div>
                     <div>
@@ -269,7 +269,7 @@ export default function Home() {
                     "Interface intuitive et support réactif. J'ai trouvé mon emploi de rêve en moins d'un mois. Merci W-I-C !"
                   </p>
                   <div className="flex items-center gap-3 pt-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 rounded-full bg-linear-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold">
                       FH
                     </div>
                     <div>
@@ -291,7 +291,7 @@ export default function Home() {
                     "La conformité légale intégrée nous fait gagner un temps précieux. Un outil indispensable pour les RH."
                   </p>
                   <div className="flex items-center gap-3 pt-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 rounded-full bg-linear-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold">
                       SA
                     </div>
                     <div>
@@ -309,7 +309,7 @@ export default function Home() {
         <section className="px-4 md:px-6 py-24">
           <div className="container mx-auto max-w-5xl">
             <Card className="relative overflow-hidden border-0 shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0052cc] via-blue-600 to-indigo-600" />
+              <div className="absolute inset-0 bg-linear-to-br from-[#0052cc] via-blue-600 to-indigo-600" />
               <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_50%,transparent_75%)] bg-size-[200%_200%] animate-shimmer" />
               <CardContent className="relative z-10 p-12 md:p-20 text-center space-y-8">
                 <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
@@ -356,7 +356,7 @@ export default function Home() {
             {/* Brand Column */}
             <div className="md:col-span-2 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0052cc] to-blue-600 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-linear-to-br from-[#0052cc] to-blue-600 flex items-center justify-center">
                   <Building2 className="h-6 w-6 text-white" />
                 </div>
                 <div className="font-bold text-2xl text-zinc-900 dark:text-white">Work-in-Comoros</div>

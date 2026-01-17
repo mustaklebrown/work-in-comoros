@@ -65,7 +65,7 @@ export async function Navbar() {
                             <DropdownMenuTrigger asChild>
                                 <Button variant="ghost" className="relative h-10 w-10 rounded-full">
                                     <Avatar className="h-10 w-10">
-                                        <AvatarFallback className="bg-gradient-to-br from-[#0052cc] to-blue-600 text-white font-semibold">
+                                        <AvatarFallback className="bg-linear-to-br from-[#0052cc] to-blue-600 text-white font-semibold">
                                             {user.name
                                                 ? user.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()
                                                 : user.email?.substring(0, 2).toUpperCase() || 'U'}
@@ -112,7 +112,7 @@ export async function Navbar() {
                         <Button variant="ghost" className="text-zinc-600 dark:text-zinc-400" asChild>
                             <Link href="/login">Connexion</Link>
                         </Button>
-                        <Button className="bg-gradient-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg shadow-blue-500/20" asChild>
+                        <Button className="bg-linear-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg shadow-blue-500/20" asChild>
                             <Link href="/register">S'inscrire</Link>
                         </Button>
                     </>
