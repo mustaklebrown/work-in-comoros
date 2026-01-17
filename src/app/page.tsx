@@ -61,7 +61,7 @@ export default function Home() {
                 className="h-16 px-12 text-lg border-2 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800"
                 asChild
               >
-                <Link href="/jobs">
+                <Link href="/jobs?location=Grande Comore">
                   Explorer les offres
                 </Link>
               </Button>
