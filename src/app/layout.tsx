@@ -55,6 +55,8 @@ export const metadata: Metadata = {
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 
+import { WhatsAppFloat } from "@/components/whatsapp-float";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +75,7 @@ export default function RootLayout({
         >
           {children}
           <Toaster richColors position="top-right" />
+          <WhatsAppFloat />
         </ThemeProvider>
       </body>
     </html>
