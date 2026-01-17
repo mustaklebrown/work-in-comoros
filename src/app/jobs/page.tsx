@@ -1,18 +1,8 @@
 import { prisma } from "@/lib/prisma"
 import { JobCard } from "@/components/job-card"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Search } from "lucide-react"
+import { JobSearchForm } from "@/components/job-search-form"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
-
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select"
 
 export default async function JobsPage({
     searchParams,
