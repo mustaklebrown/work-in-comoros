@@ -13,24 +13,24 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative px-4 md:px-6 py-20 md:py-32 flex flex-col items-center text-center overflow-hidden">
-          {/* Animated Background */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-0 -left-20 w-96 h-96 bg-[#0052cc]/10 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-0 -right-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-linear-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl" />
+        <section className="relative px-4 md:px-6 py-10 md:py-16 flex flex-col items-center text-center overflow-hidden">
+          {/* Animated Background - Optimized for Performance */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+            <div className="absolute top-0 -left-20 w-72 h-72 bg-blue-600/10 rounded-full blur-2xl animate-pulse will-change-[opacity,transform]" />
+            <div className="absolute bottom-0 -right-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-2xl animate-pulse delay-1000 will-change-[opacity,transform]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-linear-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-2xl" />
           </div>
 
-          <div className="max-w-5xl space-y-8 relative z-10">
+          <div className="max-w-4xl space-y-6 relative z-10">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 text-[#0052cc] dark:text-blue-400 text-sm font-semibold border border-blue-100 dark:border-blue-900/50 shadow-sm">
-              <Zap className="h-4 w-4" />
-              <span>Plateforme RH de confiance aux Comores</span>
-              <Badge variant="secondary" className="bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-[10px] px-2">Nouveau</Badge>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-linear-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 text-[#0052cc] dark:text-blue-400 text-xs font-semibold border border-blue-100/50 dark:border-blue-900/40 shadow-sm">
+              <Zap className="h-3.5 w-3.5" />
+              <span>Plateforme RH #1 aux Comores</span>
+              <Badge variant="secondary" className="bg-blue-100/80 dark:bg-blue-900/60 text-blue-700 dark:text-blue-200 text-[10px] px-1.5 h-4">Nouveau</Badge>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.15]">
               Trouvez votre{" "}
               <span className="bg-linear-to-r from-[#0052cc] via-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 talent idéal
@@ -40,15 +40,15 @@ export default function Home() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-              La première plateforme de recrutement moderne qui connecte les entreprises comoriennes aux meilleurs talents locaux et de la diaspora.
+            <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+              La passerelle vers l'excellence : connectez votre entreprise aux meilleurs talents locaux et de la diaspora comorienne.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-linear-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white gap-2 h-16 px-12 text-lg shadow-2xl shadow-blue-500/30 ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-all"
+                className="bg-linear-to-r from-[#0052cc] to-blue-600 hover:from-blue-700 hover:to-blue-800 text-white gap-2 h-14 px-10 text-lg shadow-2xl shadow-blue-500/30 ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-all font-bold"
                 asChild
               >
                 <Link href="/register">
@@ -58,7 +58,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="h-16 px-12 text-lg border-2 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                className="h-14 px-10 text-lg border-2 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 font-semibold"
                 asChild
               >
                 <Link href="/jobs?island=GRANDE_COMORE">
@@ -124,14 +124,14 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Feature Card 1 */}
-              <Card className="group hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border-2 hover:border-blue-200 dark:hover:border-blue-900">
+              <Card className="group hover:shadow-xl transition-all duration-200 border-2 hover:border-blue-200 dark:hover:border-blue-900/50 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
-                    <Globe className="h-7 w-7 text-white" />
+                  <div className="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                    <Globe className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Couverture Nationale</h3>
                   <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
-                    Recrutez sur les 3 îles (Grande Comore, Anjouan, Mohéli) et connectez-vous avec la diaspora mondiale.
+                    Recrutez sur les les îles et connectez-vous avec la diaspora mondiale en un clic.
                   </p>
                   <div className="flex items-center gap-2 text-[#0052cc] dark:text-blue-400 text-sm font-semibold pt-2">
                     En savoir plus <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -140,14 +140,14 @@ export default function Home() {
               </Card>
 
               {/* Feature Card 2 */}
-              <Card className="group hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 border-2 hover:border-emerald-200 dark:hover:border-emerald-900">
+              <Card className="group hover:shadow-xl transition-all duration-200 border-2 hover:border-emerald-200 dark:hover:border-emerald-900/50 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
-                    <ShieldCheck className="h-7 w-7 text-white" />
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                    <ShieldCheck className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">100% Conforme</h3>
                   <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
-                    Contrats, paie et déclarations automatisés selon le Code du Travail Comorien. Calcul CPCS intégré.
+                    Contrats, paie et déclarations automatisés selon le Code du Travail Comorien.
                   </p>
                   <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 text-sm font-semibold pt-2">
                     En savoir plus <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -156,14 +156,14 @@ export default function Home() {
               </Card>
 
               {/* Feature Card 3 */}
-              <Card className="group hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 border-2 hover:border-amber-200 dark:hover:border-amber-900">
+              <Card className="group hover:shadow-xl transition-all duration-200 border-2 hover:border-amber-200 dark:hover:border-amber-900/50 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm">
                 <CardContent className="p-8 space-y-4">
-                  <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
-                    <Zap className="h-7 w-7 text-white" />
+                  <div className="w-12 h-12 rounded-2xl bg-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <Zap className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Ultra-Rapide</h3>
                   <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
-                    Optimisé pour 2G/3G/4G avec mode offline. Consultez les offres même sans connexion internet.
+                    Optimisé pour 2G/3G/4G avec mode offline. Idéal pour les connexions instables.
                   </p>
                   <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400 text-sm font-semibold pt-2">
                     En savoir plus <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
